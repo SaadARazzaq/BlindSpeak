@@ -5,13 +5,8 @@ from colorama import *
 root = tk.Tk()
 root.resizable(False, False)
 root.configure(bg='blue')
-root.title("Text to Speech Converter")
+root.title("BlindSpeak")
 
-# Load the image file
-img = tk.PhotoImage(file="C:/Users/saadg/Desktop/text-to-speech-converter/imge.png")
-# Create a label with the image as the background
-labelImage = tk.Label(root, image=img)
-labelImage.place(x=0,y=0,relwidth=1,relheight=1)
 
 def openConsoleInCentre():
     # Get the screen width and height
@@ -44,7 +39,7 @@ def button_clicked(textbox, output_box):
 
 def main():
     openConsoleInCentre()
-    top_label = tk.Label(root, text="TEXT TO SPEECH CONVERTER!", bg='yellow')
+    top_label = tk.Label(root, text="BlindSpeak", bg='yellow')
     label = tk.Label(root, text="Enter Your Sentence: ", bg= 'yellow')
     textbox = tk.Text(root, height=0.5, width=50)
     button = tk.Button(height=1, width=25, text="CONVERT", command=lambda: button_clicked(textbox, output_box), bg='yellow')
